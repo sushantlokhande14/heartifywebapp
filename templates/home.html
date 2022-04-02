@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>Heartify by Sushant</title>
+<style>
+*{font-size:40px; font-family:Courier; }
+</style>
+</head>
+<body style="background-color:tomato;">
+<center>
+<div style="background-color:black;">
+<h1 style="font-family:TimesNewRoman; font-size:45px; color:white;">MY HEART DISEASE PREDICTOR</h1>
+</div>
+<hr>
+<div style = "background-color:#CCCCFF;">
+<p1 style="font-size:25px; ">Hello!<br> This is my heart disease predictor system designed by machine learning. This project can predict life threatening heart situations for the user . Also this can make a cardiologist's work a little more easier to know a patient's heart status just from some few criterions. You can easily make an approximate prediction by answering these following questions .</p1>
+<hr>
+</div>
+<form action = "/check" method="POST">
+<h2>ENTER THE FOLLOWING DETAILS</h2>
+<div style="background-color:#BEFF33;"><br>
+<input type="number" name="age" placeholder="AGE" required><br><br>
+<input type="number" name="bp" placeholder="RESTING BLOOD PRESSURE" required><br><br>
+<input type="number" name="cho" placeholder="CHOLESTROL" required><br><br>
+<input type="number" name="hr" placeholder="MAX HEART RATE" required><br><br>
+<input type="number" step = "any" name="op" placeholder="OLDPEAK" required><br><br>
+</div>
+<div style="background-color:lightgrey ;"><p>Select Gender</p>
+<input type ="radio" name="gender" value="M">MALE</br>
+<input type ="radio" name="gender" value="F">FEMALE</br>
+<p>Select Resting ECG type</p>
+<input type ="radio" name="ecg" value="n" checked>NORMAL</br>
+<input type ="radio" name="ecg" value="st">ST</br>
+<input type ="radio" name="ecg" value="lvh">LVH</br>
+<p>Chest pain during excersise ?</p>
+<input type ="radio" name="ea" value="y">YES</br>
+<input type ="radio" name="ea" value="n" checked>NO</br>
+<p>Is your Fasting Blood Sugar levels high ?</p>
+<input type ="radio" name="bs" value="y">YES</br>
+<input type ="radio" name="bs" value="n" checked>NO</br>
+<br></div><br>
+<input type="submit" value ="CHECK">
+</form>
+<form action="/logout" method="POST">
+	<input type="submit" value="LOGOUT">
+</form>
+<hr>
+</center>
+</body>
+</html>

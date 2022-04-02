@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Heartify by Sushant</title>
+<style>
+*{font-size:40px; font-family:Courier; }
+</style>
+</head>
+<body style="background-color:tomato;">
+<center>
+<div style="background-color:black;">
+<h1 style="font-family:TimesNewRoman; font-size:45px; color:white;">MY HEART DISEASE PREDICTOR</h1>
+</div>
+<hr>
+<h1>SIGN-UP PAGE! </h1> 
+<form action="/signup" method="POST">
+<input type="text" name="un" placeholder = "Enter Username" required ><br>
+<br><input type ="password" name="pw1" placeholder="Enter Password" required><br><br>
+<input type ="password" name="pw2" placeholder="Confirm Password" required><br><br>
+<input type="submit" value="SIGN-UP">
+</form>
+<h2> {{ msg }} </h2>
+<a href="{{ url_for('login') }}"> LOGIN</a>
+</center>
+</body>
+</html>
